@@ -30,7 +30,7 @@ const Index = () => {
       
       <main className="container mx-auto py-8 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="order-2 lg:order-1">
+          <div className="order-2 lg:order-1 hover:shadow-xl transition-all duration-300">
             <WeddingInvitation
               blessing={invitationData.blessing}
               invitationTitle={invitationData.invitationTitle}
