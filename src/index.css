@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +101,48 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
   }
+}
+
+.invitation-container {
+  background-image: url('/lovable-uploads/7182a155-cc86-4de7-8cf9-16ef9ebae1e6.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gold-text {
+  color: #d4b26a;
+}
+
+.dancing-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+.floral-border {
+  position: relative;
+}
+
+.floral-border::before,
+.floral-border::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.floral-border::before {
+  top: 0;
+  left: 0;
+  background-image: url('/floral-top-left.svg');
+}
+
+.floral-border::after {
+  bottom: 0;
+  right: 0;
+  background-image: url('/floral-bottom-right.svg');
 }
