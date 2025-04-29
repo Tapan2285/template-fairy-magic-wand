@@ -58,10 +58,14 @@ const WeddingInvitation: React.FC<WeddingInvitationProps> = ({
               <h3 className="text-invitation-gold text-xl sm:text-2xl font-semibold">{groomName}</h3>
               <p className="text-invitation-gold dancing-script text-lg sm:text-xl">&</p>
               <h3 className="text-invitation-gold text-xl sm:text-2xl font-semibold">{brideName}</h3>
+              <div className="mt-4 border-t border-invitation-gold/30 pt-4 px-6">
+                <p className="text-invitation-gold text-base sm:text-lg font-medium">40 సంవత్సరాల వివాహ వేడుకలు</p>
+                <p className="text-invitation-gold text-sm italic mt-1">(40 Years of Marriage Celebration)</p>
+              </div>
             </div>
             
             <div className="text-center">
-              <h4 className="text-invitation-gold text-sm sm:text-base font-medium mb-2">సుముహూర్తం</h4>
+              <h4 className="text-invitation-gold text-sm sm:text-base font-medium mb-2">వేడుక తేదీ</h4>
               <p className="text-invitation-gold text-xs sm:text-sm mb-1">{date}, {time}</p>
               <h4 className="text-invitation-gold text-sm sm:text-base font-medium mt-4 mb-2">{venue}</h4>
               <p className="text-invitation-gold text-xs sm:text-sm px-8">{address}</p>
