@@ -89,11 +89,71 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float-slow': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'float-medium': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-6px)' }
+				},
+				'float-fast': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-4px)' }
+				},
+				'pulse-slow': {
+					'0%, 100%': { opacity: '0.4' },
+					'50%': { opacity: '0.8' }
+				},
+				'pulse-medium': {
+					'0%, 100%': { opacity: '0.5' },
+					'50%': { opacity: '0.9' }
+				},
+				'pulse-fast': {
+					'0%, 100%': { opacity: '0.6' },
+					'50%': { opacity: '1' }
+				},
+				'spin-slow': {
+					'0%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg)' }
+				},
+				'sway-slow': {
+					'0%, 100%': { transform: 'rotate(-3deg)' },
+					'50%': { transform: 'rotate(3deg)' }
+				},
+				'sway-medium': {
+					'0%, 100%': { transform: 'rotate(-2deg)' },
+					'50%': { transform: 'rotate(2deg)' }
+				},
+				'draw': {
+					'0%': { 'stroke-dashoffset': '100' },
+					'100%': { 'stroke-dashoffset': '0' }
+				},
+				'draw-slow': {
+					'0%': { 'stroke-dashoffset': '50' },
+					'100%': { 'stroke-dashoffset': '0' }
+				},
+				'grow': {
+					'0%': { transform: 'scale(0.8)', opacity: '0.3' },
+					'100%': { transform: 'scale(1)', opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float-slow': 'float-slow 6s ease-in-out infinite',
+				'float-medium': 'float-medium 4s ease-in-out infinite',
+				'float-fast': 'float-fast 3s ease-in-out infinite',
+				'pulse-slow': 'pulse-slow 6s ease-in-out infinite',
+				'pulse-medium': 'pulse-medium 4s ease-in-out infinite',
+				'pulse-fast': 'pulse-fast 2s ease-in-out infinite',
+				'spin-slow': 'spin-slow 12s linear infinite',
+				'sway-slow': 'sway-slow 4s ease-in-out infinite',
+				'sway-medium': 'sway-medium 3s ease-in-out infinite',
+				'draw': 'draw 3s linear forwards',
+				'draw-slow': 'draw-slow 5s linear forwards',
+				'grow': 'grow 3s ease-out forwards'
 			}
 		}
 	},
