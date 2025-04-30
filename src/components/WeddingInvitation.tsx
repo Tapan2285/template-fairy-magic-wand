@@ -250,7 +250,7 @@ const WeddingInvitation: React.FC<WeddingInvitationProps> = ({
                     <Flower size={16} />
                   </div>
                 </div>
-                <p className="text-invitation-gold text-base sm:text-lg font-medium">40 సంవత్సరాల వివాహ వేడుకలు</p>
+                <p className="text-invitation-gold text-base sm:text-lg font-medium">40వ వివాహ వార్షికోత్సవ వేడుక</p>
                 <p className="text-invitation-gold text-sm italic mt-1">(40 Years of Marriage Celebration)</p>
               </div>
             </div>
